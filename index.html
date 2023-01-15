@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='true' name='HandheldFriendly'/>
+    <meta content='width' name='MobileOptimized'/>
+    <meta content='yes' name='apple-mobile-web-app-capable'/>
+
+
+    
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./fonts/Kanit/stylesheet.css">
+    <link rel="shortcut icon" href="/img/logo.ico" type="image/x-icon">
+    <title>Project For JS From Zero To Hero 2023</title>
+</head>
+<body>
+    <div class="container">
+
+<div class="header">
+    
+    <nav class="nav-style">
+    
+        <img class="logos"src="img/Logo.png" alt="logo">
+                
+                <ul class="menu">
+            <li><a href="#About-me">About me</a></li>
+            <li><a href="#My-hobby">My hobby</a></li>
+            <li><a href="#Extra-traning">Extra Traning</a></li>
+            <li><a href="#Photo-galery">Photo galery</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+               </ul>
+
+    </nav>
+
+        <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+              <div id="bar1" class="bar"></div>
+              <div id="bar2" class="bar"></div>
+              <div id="bar3" class="bar"></div>
+            </div>
+
+            <nav class="nav" id="nav">
+              <ul>
+            <li><a href="#About-me">About me</a></li>
+            <li><a href="#My-hobby">My hobby</a></li>
+            <li><a href="#Extra-traning">Extra Traning</a></li>
+            <li><a href="#Photo-galery">Photo galery</a></li>
+            <li><a href="#Contacts">Contacts</a></li>
+              </ul>
+            </nav> 
+          </div>
+          
+          <div class="menu-bg" id="menu-bg"></div>
+
+        <video class="bg-video" autoplay muted loop> 
+            <source src="img/video-background.mp4">
+        </video>
+             
+        
+</div>
+       
+<main>
+<section class="about-me-information margin-bottom-50px">
+    <div class="about-me">
+        <div class="about-row">
+            <div class="about-col-one">
+                <img src="img/myphoto.png">
+            </div>
+            <div class="about-col-two">
+                <h1 id="About-me" class="title-one margin-bottom-30px">About Me</h1>
+                <p  >My name is Alexander Loyko. My age is 30 years old. I am actively learning programming. I learn quickly. I have logical thinking. I show initiative in all areas of my life. I calmly accept constructive criticism. I communicate constructively even in a conflict situation. Currently open to proposals in the area of ​​interesting projects.</p>
+            <div class="tab-titles ">
+<p class="tab-links active-link" onclick="opentab('skills')">Web Developers Skills</p>
+<p class="tab-links" onclick="opentab('experience')">Experience</p>
+<p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab " id="skills">
+                <ul>
+                    <li ><span>HTML</span><br>HTML (HyperText Markup Language) – is a core technology for building Web pages, and it is the backbone of every website. This basic markup language describes the structure and content of web pages and web applications.</li>
+                    <li><span>CSS</span><br>CSS (Cascading Style Sheets) is a styling language that defines HTML code’s visual look and presentation. In other words, it is the extension to the HTML that controls the layout of the elements on the webpages and is responsible for the font, format, colors on the page. </li>
+                    <li><span>JavaScript</span><br>JavaScript is a prevalent and widely used scripting language for web development, and it is the core technology of modern websites. JavaScript allows you to change HTML and CSS elements making a website more interactive, dynamic, and engaging.</li>
+                    <li><span>Testing and debugging</span><br>Every web developer should know how to test and debug their code. Testing and debugging are important activities during the development and maintenance process and should be done regularly. In that way, you’ll ensure that the code is functioning correctly, thus creating a positive user experience.</li>
+                </ul>
+            </div>
+
+
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>2018-2022</span><br>Sale of wheels and castors on the market of the Russian Federation. Development of key sales skills: sales, business acumen, strategic forecasting, active listening, empathy. relationship building, effective communication, negotiation skills, project management, time management</li>
+                    <li><span>2017-2018</span><br>Experience in sales of chimney systems and ventilation</li>
+                    <li><span>2016-2017</span><br>Freelancing experience</li>
+                   
+                </ul>
+            </div>
+
+
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>SEPTEMBER 2011-JUNE 2015</span><br> Software engineer-economist, Belarusian State University of Informatics and Radioelectronics, Minsk</li>
+                    <li><span>SEPTEMBER 2007-JULY 2011</span><br> Technician programmer, Private establishment education "Technical College of Business and Law", Minsk</li>
+                    
+                   
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    
+
+</section>
+<section class="my-hobby-title-information margin-bottom-30px">
+    <h2 id="My-hobby" class="title-headlines">My Hobby</h2>
+</section>
+<section class="my-hobbies-information margin-bottom-50px">
+    <div class="my-hobbies">
+        <div class="hobbies">
+        <svg class="hobbies-icon"> 
+    <use xlink:href="icons/symbol-defs.svg#icon-reading"></use>
+        </svg>
+    
+        <div class="title-two">Reading</div>
+        <p class="hobbie-text">Reading is one of my favorite hobbies. Thanks to this hobby, you can see the world more widely, clearly articulate your thoughts</p>
+    
+    </div>
+        <div class="hobbies"><svg class="hobbies-icon"> 
+            <use xlink:href="icons/symbol-defs.svg#icon-football"></use>
+                        </svg>
+                        <div class="title-two">Playing football</div>
+                        <p class="hobbie-text">Football develops coordination, attentiveness and endurance.</p>
+                    </div>
+        <div class="hobbies"><svg class="hobbies-icon"> 
+            <use xlink:href="icons/symbol-defs.svg#icon-travelling"></use>
+                        </svg>
+                        <div class="title-two">Traveling</div>
+                        <p class="hobbie-text">Travel always broadens one's horizons and enriches the possibilities of experiences, which is directly reflected in emotional health and a sense of life satisfaction.</p>
+                    </div>
+        <div class="hobbies"><svg class="hobbies-icon"> 
+            <use xlink:href="icons/symbol-defs.svg#icon-gym"></use>
+                        </svg>
+                        <div class="title-two">Gym</div>
+                        <p class="hobbie-text">Training in the gym improves metabolism, blood circulation, the functioning of the cardiovascular system and the brain.</p>
+                     </div>
+        <div class="hobbies"><svg class="hobbies-icon"> 
+            <use xlink:href="icons/symbol-defs.svg#icon-skydive"></use>
+                        </svg>
+                        <div class="title-two">Skydiving</div>
+                        <p class="hobbie-text">
+                            Skydiving is the best stress reliever.</p>
+                    </div>
+        <div class="hobbies"><svg class="hobbies-icon"> 
+            <use xlink:href="icons/symbol-defs.svg#icon-healthy-nutrition"></use>
+                        </svg>
+                        <div class="title-two">Healthy nutrition</div>
+                        <p class="hobbie-text">
+                            Healthy nutrition makes it possible to stabilize weight without violent restrictions, helps to get rid of diseases and prevent their development, helps to restore intellectual and physical energy.</p>
+                    </div>
+    </div>
+</section>
+<section class="my-traning-title-information margin-bottom-30px">
+    <h2 id="Extra-traning" class="title-headlines">Extra Traning</h2>
+</section>
+<section class="my-traning-information margin-bottom-50px">
+    <div class="my-traning">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="/icons/design_128.png">
+                    <h3>English</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Minsk State Linguistic University, MSLU Advanced Evening Courses</p>
+                        <a href="https://mslu.by/podrazdeleniya/uchebnyj-centr-vechernie-kursy">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="/icons/code_128.png">
+                    <h3>Belhard</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Academy BELHARD, Back End development using PHP, MySql.</p>
+                        <a href="https://belhard.academy/">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="/icons/design_128.png">
+                    <h3>Sales</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Courses from the company to improve sales skills, mentoring Pro-retail companies.</p>
+                        <a href="https://pro-retail.by/">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="/icons/code_128.png">
+                    <h3>Online learn</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Miscellaneous online lessons and programming courses.</p>
+                        <a href="https://onlineitea.com/">Read More</a>
+                </div>
+            </div>
+        </div>
+</section>
+<section class="my-galery-title-information margin-bottom-30px">
+    <h2 id="Photo-galery" class="title-headlines">Photo Galery</h2>
+</section>
+<section class="my-galery margin-bottom-50px">
+    <div class="galery ">
+        <div class="slideshow-container">
+    
+           
+            <div class="mySlides fade">
+              <div class="number-text">1 / 2</div>
+              <img src="img/1.jpg" style="width:100%">
+              <div class="text">2013 Thailand</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="number-text">2 / 2</div>
+              <img src="img/2.jpg" style="width:100%">
+              <div class="text">2014 Egypt</div>
+            </div>
+          
+          
+          
+           
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            </div>
+    
+    
+      </div>
+      
+
+</section>
+<section class="my-contacts margin-bottom-50px">
+    <div class="container">
+        <h2 id="Contacts" class="contacts-h2">Contacts</h2>
+        <div class="contacts-grid">
+            <div class="contacts-item">
+                <svg class="contacts-icon"> 
+                    <use xlink:href="icons/symbol-defs.svg#icon-location"></use>
+                </svg>
+                <h3 class="contacts-h3-blue">Location:</h3>
+                <h3 class="contacts-h3">Belarus, <br> Minsk</h3>
+            </div>
+            <div class="contacts-item">
+                <svg class="contacts-icon"> 
+                    <use xlink:href="icons/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                <h3 class="contacts-h3-blue">Phone number:</h3>
+                <h3 class="contacts-h3"><a href="https://t.me/Trinadcatii">+375 (29) 602-12-04</a></h3>
+                
+            </div>
+
+            <div class="contacts-item">
+                <svg class="contacts-icon"> 
+                    <use xlink:href="icons/symbol-defs.svg#icon-time"></use>
+                </svg>
+                <h3 class="contacts-h3-blue">
+                    Time for calls:</h3>
+                <h3 class="contacts-h3">Mon-Sat <br> 10:00-18:00</h3>
+            </div>
+            <div class="contacts-item">
+                <svg class="contacts-icon"> 
+                    <use xlink:href="icons/symbol-defs.svg#icon-posmail" ></use>
+                </svg>
+                <h3 class="contacts-h3-blue">E-mail:</h3>
+                <h3 class="contacts-h3-acent"><a href="mailto:loykoalexander@gmail.com">Open for offers</a></h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+<section class="footer-title-information">
+    <footer class="footer">
+
+        <h5 class="foot-h5 title-two" >Website made for Project For JS From Zero To Hero 2023 by Loyko Alexander  ©
+        </h5>
+        
+        </footer>
+</section>
+
+    </div>
+
+    <script defer src="/js/burger.js"> </script>
+    <script defer src="/js/galery.js"> </script>
+    <script defer src="/js/aboutbutline.js"> </script>
+    
+</body>
+</html>
