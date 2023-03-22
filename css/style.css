@@ -105,7 +105,8 @@ h1,h2{
 }
 
 body{
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-style: light;
     font-weight: 300;
     height:100%;
     padding: 5rem;
