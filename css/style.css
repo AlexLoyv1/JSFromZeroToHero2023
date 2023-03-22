@@ -231,7 +231,7 @@ flex-basis: 25%;
 }
 
 .tab-links.active-link::after{
-    width: 50%;
+    width: 100%;
 }
 
 .tab-contents ul li{
